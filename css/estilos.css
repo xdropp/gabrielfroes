@@ -5,7 +5,32 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
- 
+
+@media all and (min-width: 480px) {
+    #phoneContent {display:none;}
+}
+
+@media all and (max-width: 479px) {
+    #deskContent {display:none;}
+    #phoneContent {
+    background-image: url(https://image.freepik.com/free-photo/software-source-coding_163855-54.jpg);
+    background-size: cover;
+    position: relative; 
+    height: 600px;
+    max-width: 100%;
+    display: flex;
+    }
+    #phoneContent::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(70, 34, 94, 0.63); 
+    }
+}
+
 /***********SECTION 1************/ 
 
 div.initial { 
@@ -32,7 +57,7 @@ div.initial::before {
 }
 
 
-p.presentation{
+p.presentationDesk{
     color: rgba(255, 255, 255, 1);
     font-family: Europa, sans-serif;
     border-right: 1px solid rgba(255, 255, 255, 0.75);
@@ -42,6 +67,19 @@ p.presentation{
     text-align: center;
     position: relative;
     max-width: 100%;
+}
+
+p.presentationPhone{
+    color: rgba(255, 255, 255, 1);
+    font-family: Europa, sans-serif;
+    font-size: 20pt;
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    margin-top: 60%;
 }
 
 
