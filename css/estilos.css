@@ -1,0 +1,96 @@
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+ 
+/***********SECTION 1************/ 
+
+div.initial { 
+    position: relative; 
+    height: 600px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://image.freepik.com/free-photo/software-source-coding_163855-54.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+div.initial::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(70, 34, 94, 0.63); 
+}
+
+
+p.presentation{
+    color: rgba(255, 255, 255, 1);
+    font-family: Europa, sans-serif;
+    border-right: 1px solid rgba(255, 255, 255, 0.75);
+    font-size: 35pt;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+}
+
+
+/*********Animação de digitação***********/
+
+.typing-animation{
+    animation: blinkCursor 500ms infinite normal, 
+    typing 7s steps(160) normal;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 40em;
+    }
+}
+
+@keyframes blinkCursor {
+    from{
+        border-right-color: 1px solid (255, 255, 255, 0.75);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+/************SECTION 2************/
+
+h1#firstitle{
+    color: #141c3a;
+}
+
+h1#titletalk{
+    color: white;
+    line-height: 1.125;
+    font-weight: 600;    
+}
+
+h2#miniresumo{
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+}
+
+img.is-skill-icon{
+    height: 48px;
+    width: auto;
+}
+
+
