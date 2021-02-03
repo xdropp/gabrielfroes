@@ -93,4 +93,15 @@ img.is-skill-icon{
     width: auto;
 }
 
+.note{
+    width: 100px;
+    margin-top: 50px;
+}
 
+.warn{
+    width: 100px;
+}
+
+.constru{
+    margin-top: 100px;
+}
